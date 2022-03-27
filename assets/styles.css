@@ -82,36 +82,30 @@ h2 {
     margin-left: 64px;
     margin-top: 64px;
     font-size: xx-large;
+    width: 91.42px;
 }
 
-.about {
+#about, #work, #contact {
     display: flex;
     flex-direction: row;
 }
 
-.about .vl {
+.vl {
     border-left: 6px solid var(--baseColor);
     height: 200px;
-    margin-top: 32px;
+    margin-top: 64px;
     margin-left: 64px;
+    margin-bottom: 64px;
 }
 
-.about p {
+#about p {
     margin-left: 64px;
-    margin-top: 64px;
+    margin-top: 96px;
     color: var(--baseColor);
     font-size: large;
+    margin-right: 60px;
 }
 
-.work {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: row;
-}
-
-.work .vl {
-    border-left: 6px solid var(--baseColor);
+#work .vl {
     height: 400px;
-    margin-top: 64px;
-    margin-left: 78px;
 }
