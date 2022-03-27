@@ -6,6 +6,8 @@
 
 html {
     background-color: var(--backgroundColor);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
 }
 
 header {
@@ -41,10 +43,33 @@ nav a {
     text-underline-offset: 12px;
 }
 
-img {
-    max-height: 320px;
-    width: 110%;
-    margin-left: -12px;
+figure {
+  /* Use "linear-gradient" to add a darken background effect to the image*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/background.jpg");
+
+  height: 400px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+figcaption {
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  left: 85%;
+  font-weight: bold;
+  font-size: xx-large;
+  transform: translate(-50%, -50%);
+  color: var(--backgroundColor);
+  background-color: var(--baseColor);
+  padding: 16px;
 }
 
 body {
@@ -87,6 +112,6 @@ h2 {
 .work .vl {
     border-left: 6px solid var(--baseColor);
     height: 400px;
-    margin-top: px;
-    margin-left: 70px;
+    margin-top: 64px;
+    margin-left: 78px;
 }
