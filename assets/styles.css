@@ -14,10 +14,11 @@ header {
     margin-left: -12px;
     margin-right: -12px;
     margin-top: -12px;
+    display: flex;
+    justify-content: space-between;
 }
 
 header h1 {
-    display: inline;
     color: var(--backgroundColor);
     background-color: var(--pastelRed);
     padding: 6px 25px 6px 25px;
@@ -25,21 +26,19 @@ header h1 {
 }
 
 nav {
-    float: right;
     list-style-type: none;
     text-align: center; 
     padding: 0;
-    margin: 0;
+    margin-top: 24px;
 }
 
 nav a {
-  display: inline;
-  font-size: 20px;
-  padding: 20px;
-  color: var(--backgroundColor);
-  text-decoration-color: #F17A7E;
-  text-underline-position: below;
-  text-underline-offset: 12px;
+    font-size: 20px;
+    padding: 20px;
+    color: var(--backgroundColor);
+    text-decoration-color: #F17A7E;
+    text-underline-position: below;
+    text-underline-offset: 12px;
 }
 
 img {
@@ -50,4 +49,31 @@ img {
 
 body {
     background-color: var(--backgroundColor);
+}
+
+h2 {
+    color: var(--baseColor);
+    text-align: right;
+    margin-left: 64px;
+    margin-top: 64px;
+    font-size: xx-large;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.about .vl {
+    border-left: 6px solid var(--baseColor);
+    height: 200px;
+    margin-top: 32px;
+    margin-left: 64px;
+}
+
+.about p {
+    margin-left: 64px;
+    margin-top: 64px;
+    color: var(--baseColor);
+    font-size: large;
 }
