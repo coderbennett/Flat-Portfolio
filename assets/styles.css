@@ -1,9 +1,30 @@
+:root {
+    --baseColor: #4A6163;
+    --backgroundColor: #F9FAF4;
+    --pastelRed: #F17A7E;
+}
+
+html {
+    background-color: var(--backgroundColor);
+}
+
+header {
+    background-color: var(--baseColor);
+    padding: 20px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -12px;
+}
+
 header h1 {
     display: inline;
+    color: var(--backgroundColor);
+    background-color: var(--pastelRed);
+    padding: 6px 25px 6px 25px;
+    margin-left: -16px;
 }
 
 nav {
-    background-color: yellow;
     float: right;
     list-style-type: none;
     text-align: center; 
@@ -15,4 +36,8 @@ nav a {
   display: inline;
   font-size: 20px;
   padding: 20px;
+  color: var(--backgroundColor);
+  text-decoration-color: #F17A7E;
+  text-underline-position: below;
+  text-underline-offset: 12px;
 }
