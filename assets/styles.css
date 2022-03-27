@@ -41,3 +41,13 @@ nav a {
   text-underline-position: below;
   text-underline-offset: 12px;
 }
+
+img {
+    max-height: 320px;
+    width: 110%;
+    margin-left: -12px;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
