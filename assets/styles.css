@@ -66,6 +66,14 @@ figure {
     position: relative;
 }
 
+#headshot {
+    max-width: 150px;
+    border: 5px solid var(--baseColor);
+    top: 55%;
+    left: 5%;
+    position: absolute;
+}
+
 figcaption {
     text-align: center;
     position: absolute;
@@ -116,6 +124,7 @@ h2 {
 
 #work .vl {
     height: 800px;
+    margin-right: 36px;
 }
 
 h3 {
@@ -138,18 +147,21 @@ h3 a:hover {
 }
 
 #projects {
-    flex: 2 0 400;
-    flex-flow: column wrap;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;    
+    margin-top: 64px;
 }
 
 section img {
-    margin: 8px 8px 8px 55px;
-    width: 330px;
-    height: 190px;
+    display: flex;
     border: 5px solid var(--baseColor);
     filter: brightness(80%);
     opacity: 70%;
+    max-height: 180px;
+    max-width: 390px;
     transition: all 0.3s ease-out;
+    margin: auto;
 }
 
 #projects img:hover {
@@ -157,14 +169,15 @@ section img {
     opacity: 100%;
 }
 
-.edge {
-    margin: 8px 8px 8px 8px;
-
+#primaryProject {
+    max-height: none;
+    max-width: 690px;
+    margin: auto;
+    flex: 10 0 75%;
 }
 
-#primary {
+.secondaryRow {
     display: flex;
-    width: 690px;
-    height: 460px;
-    margin: 8px 8px 8px 55px;
+    flex-flow: row;
+    flex-wrap: wrap;    
 }
