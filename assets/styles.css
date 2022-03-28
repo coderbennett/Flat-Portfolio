@@ -115,7 +115,7 @@ h2 {
 }
 
 #work .vl {
-    height: 400px;
+    height: 800px;
 }
 
 h3 {
@@ -142,10 +142,10 @@ h3 a:hover {
     flex-flow: column wrap;
 }
 
-#projects img {
-    margin: 13px, 12px, 12px, 15px;
-    max-width: fit-content;
-    max-height: 130px;
+section img {
+    margin: 8px 8px 8px 55px;
+    width: 330px;
+    height: 190px;
     border: 5px solid var(--baseColor);
     filter: brightness(80%);
     opacity: 70%;
@@ -155,4 +155,16 @@ h3 a:hover {
 #projects img:hover {
     filter: brightness(100%);
     opacity: 100%;
+}
+
+.edge {
+    margin: 8px 8px 8px 8px;
+
+}
+
+#primary {
+    display: flex;
+    width: 690px;
+    height: 460px;
+    margin: 8px 8px 8px 55px;
 }
