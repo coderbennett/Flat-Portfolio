@@ -255,6 +255,15 @@ h3 a:hover {
         flex-direction: column;
     }
 
+    header h1 {
+        margin-left: 0px;
+    }
+
+    .hero figcaption {
+        top: 85%;
+        left: 75%;
+    }
+
     nav {
         margin-top: 0px;
         padding-bottom: 12px;
