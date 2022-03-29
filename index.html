@@ -14,15 +14,15 @@
             <a href="#aboutMe">About Me</a>
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
-            <a href="#resume">Resume</a>
+            <a href="./assets/joeybennett_resume_functional.pdf" target="_blank">Resume</a>
         </nav>
     </header>
-    <figure>
+    <figure class="hero">
         <figcaption>Portfolio</figcaption>
         <img id="headshot" src="./assets/headshot.jpg">
     </figure>
     <section id="about">
-        <h2>About<br>Me</h2>
+        <h2>About<br id="aboutMeLinebreak"> Me</h2>
         <div class="vl"></div>
         <p>I started painting as a hobby when I was little. I didn't know I had any talent.
             I believe talent is just a pursued interest. Anybody can do what I do. Just go
@@ -35,14 +35,24 @@
         <h2>Work</h2>
         <div class="vl"></div>
         <section id="projects">
-            <section>
-                <img id="primaryProject" src="./assets/stitch-row-counter.jpg" />
+            <figure id="primaryProject">
+                <figcaption id="project1Text">Row Counter</figcaption>
+            </figure>
+            <section class="secondaryRows">
+                <figure class="secondaryProjects">
+                    <figcaption>Placeholder</figcaption>
+                </figure>
+                <figure class="secondaryProjects">
+                    <figcaption>Placeholder</figcaption>       
+                </figure>
             </section>
-            <section class="secondaryRow">  
-                <img src="./assets/stitch-row-counter.jpg" />
-                <img src="./assets/stitch-row-counter.jpg" />
-                <img src="./assets/stitch-row-counter.jpg" />
-                <img src="./assets/stitch-row-counter.jpg" />
+            <section class="secondaryRows">
+                <figure class="secondaryProjects">
+                    <figcaption>Placeholder</figcaption>
+                </figure>
+                <figure class="secondaryProjects">
+                    <figcaption>Placeholder</figcaption>
+                </figure>
             </section>
         </section>
     </section>
