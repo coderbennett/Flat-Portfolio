@@ -53,7 +53,7 @@ nav a:hover {
 
 .hero {
     /* Use "linear-gradient" to add a darken background effect to the image*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/forest.jpg");
 
     height: 400px;
     margin-left: -10px;
@@ -136,11 +136,19 @@ h2 {
     align-self: center;
 }
 
+.secondaryRows a {
+    display: inline-block;
+    height: 90px;
+    width: 100%;
+    margin: 0px 8px 0px 8px;
+    
+}
+
 .secondaryProjects {
     display: inline-block;
     height: 90px;
     width: 100%;
-    margin: 0px 8px;
+    margin: 0px;
     background-image: url("/assets/stitch-row-counter.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -149,6 +157,18 @@ h2 {
     border: 5px solid var(--baseColor);
     filter: brightness(80%);
     transition: all 0.3s ease-out;
+}
+
+#projectImage2 {
+    background-image: url("/assets/earthsattelitenasa.jpg");
+}
+
+#projectImage3 {
+    background-image: url("/assets/spacexlaunch.jpg");
+}
+
+#projectImage4 {
+    background-image: url("/assets/background.jpg");
 }
 
 #primaryProject:hover,
@@ -158,9 +178,9 @@ h2 {
 
 #primaryProject {
     height: 470px;
-    width: 80%;
+    width: 79%;
     margin: 8px auto;
-    background-image: url("/assets/stitch-row-counter.jpg");
+    background-image: url("/assets/nasa-earth.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,12 +190,16 @@ h2 {
     transition: all 0.3s ease-out;
 }
 
+#primaryProjectLink {
+    margin: 0px 0px 0px 8px;
+}
+
 .secondaryRows {
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap; 
-    margin: 8px auto;
-    width: 83%;
+    margin: 8px auto 8px auto;
+    width: 80%;
 }
 
 #project1Text {
