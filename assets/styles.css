@@ -158,10 +158,10 @@ section img {
     border: 5px solid var(--baseColor);
     filter: brightness(80%);
     opacity: 70%;
-    max-height: 180px;
-    max-width: 390px;
+    height: 180px;
+    width: 330px;
     transition: all 0.3s ease-out;
-    margin: auto;
+    margin: 16px auto;
 }
 
 #projects img:hover {
@@ -170,9 +170,9 @@ section img {
 }
 
 #primaryProject {
-    max-height: none;
-    max-width: 690px;
-    margin: auto;
+    height: 470px;
+    width: 700px;
+    margin: 16px auto;
     flex: 10 0 75%;
 }
 
