@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- add meta tag for media queries to allow responsive webpages -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/styles.css"/>
-    <title>Document</title>
+    <title>Joey Bennett's Web Portfolio</title>
 </head>
+
 <body>
+
     <header>
         <h1>Joey Bennett</h1>
+        <!-- nav for page navigation with resume attachment -->
         <nav>
             <a href="#aboutMe">About Me</a>
             <a href="#work">Work</a>
@@ -17,12 +21,17 @@
             <a href="./assets/joeybennett_resume_functional.pdf" target="_blank">Resume</a>
         </nav>
     </header>
+
+    <!-- title image with my headshot photo and portfolio subtitle -->
     <figure class="hero">
         <figcaption>Portfolio</figcaption>
-        <img id="headshot" src="./assets/headshot.jpg">
+        <img id="headshot" src="assets/headshot.jpg">
     </figure>
+
+    <!-- about section with a paragraph about my experience -->
     <section id="about">
         <h2>About<br id="aboutMeLinebreak"> Me</h2>
+        <!-- div with vertical line styling, there are two more of these below -->
         <div class="vl"></div>
         <p>I started painting as a hobby when I was little. I didn't know I had any talent.
             I believe talent is just a pursued interest. Anybody can do what I do. Just go
@@ -31,15 +40,22 @@
            
            We'll put some happy little leaves here and there. These things happen automatically.</p>
     </section>
+
+    <!-- work section where my projects will be presented -->
     <section id="work">
         <h2>Work</h2>
         <div class="vl"></div>
+
+        <!-- project section, special styling for this container -->
         <section id="projects">
+            <!-- primary project, special styling to present larger -->
             <a id="primaryProjectLink" href="#">
                 <figure id="primaryProject">
                     <figcaption id="project1Text">Placeholder</figcaption>
                 </figure>  
             </a>
+
+            <!-- first secondary row, with two smaller projects presented -->
             <section class="secondaryRows">
                 <a href="#">
                     <figure id="projectImage2" class="secondaryProjects">
@@ -52,6 +68,8 @@
                     </figure>
                 </a>
             </section>
+
+            <!-- second secondary row -->
             <section class="secondaryRows">
                 <a href="#">
                     <figure id="projectImage4" class="secondaryProjects">
@@ -64,8 +82,11 @@
                     </figure>
                 </a>
             </section>
+
         </section>
     </section>
+
+    <!-- contact section -->
     <section id="contact">
         <h2>Contact</h2>
         <div class="vl"></div>
@@ -74,5 +95,6 @@
         <h3><a href="https://www.linkedin.com/in/joey-bennett-jkb/">LinkedIn</a></h3>
         <h3><a href="https://twitter.com/joeykalanchoe">Twitter</a></h3>
     </section>
+
 </body>
 </html>

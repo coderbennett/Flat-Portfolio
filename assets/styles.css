@@ -1,9 +1,12 @@
+/* root variables for easy access to thematic colors */
 :root {
     --baseColor: #4A6163;
     --backgroundColor: #F9FAF4;
     --pastelRed: #F17A7E;
 }
 
+/* styling for the page background, scroll-behavior for the
+navigation links to scroll smoothly when clicked */
 html {
     background-color: var(--backgroundColor);
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -11,6 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* header styling with flex display to spread nav and h1 evenly */
 header {
     background-color: var(--baseColor);
     padding: 20px;
@@ -35,16 +39,20 @@ nav {
     margin-top: 24px;
 }
 
+/* the nav links have some special styling like underline offset 
+the transition property is for when the links change styling
+either by hovering or some other interaction*/
 nav a {
     font-size: 20px;
     padding: 20px;
     color: var(--backgroundColor);
     text-decoration-color: #F17A7E;
-    text-underline-position: below;
     text-underline-offset: 12px;
     transition: all 0.1s ease-out;
 }
 
+/* when we hover over the nav items they will change the following styling
+properties */
 nav a:hover {
     font-weight: bold;
     text-decoration-thickness: 4px;
@@ -52,15 +60,15 @@ nav a:hover {
 }
 
 .hero {
-    /* Use "linear-gradient" to add a darken background effect to the image*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/forest.jpg");
+    /* using linear-gradient to add a darken background effect to the image*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/forest.jpg");
 
     height: 400px;
     margin-left: -10px;
     margin-right: -12px;
     margin-top: -10px;
 
-    /* Position and center the image to scale nicely on all screens */
+    /* these settings position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,6 +100,8 @@ body {
     background-color: var(--backgroundColor);
 }
 
+/* the h2s are major section headers and should be uniform,
+to maintain positioning they were given a precise width measurement*/
 h2 {
     color: var(--baseColor);
     text-align: right;
@@ -102,10 +112,12 @@ h2 {
     width: 91.42px;
 }
 
+/* each of the body sections are given a flexbox layout */
 #about, #work, #contact {
     display: flex;
 }
 
+/* this styling creates a vertical line for each section */
 .vl {
     border-left: 6px solid var(--baseColor);
     height: 200px;
@@ -122,11 +134,14 @@ h2 {
     margin-right: 80px;
 }
 
+/* special height styling for the vertical line in the work section because
+this section is much taller*/
 #work .vl {
     height: 800px;
-    margin-right: 36px;
 }
 
+/* special flex column styling for the projects section to allow for
+my projects to stack on top of one another */
 #projects {
     display: flex;
     flex-flow: column;
@@ -144,12 +159,16 @@ h2 {
     
 }
 
+/* secondaryprojects class selector with the default styling for each
+secondary project and a default image 
+
+there is also a filter to darken the image when not hovering*/
 .secondaryProjects {
     display: inline-block;
     height: 90px;
     width: 100%;
     margin: 0px;
-    background-image: url("/assets/stitch-row-counter.jpg");
+    background-image: url("assets/stitch-row-counter.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,27 +179,30 @@ h2 {
 }
 
 #projectImage2 {
-    background-image: url("/assets/earthsattelitenasa.jpg");
+    background-image: url("assets/earthsattelitenasa.jpg");
 }
 
 #projectImage3 {
-    background-image: url("/assets/spacexlaunch.jpg");
+    background-image: url("assets/spacexlaunch.jpg");
 }
 
 #projectImage4 {
-    background-image: url("/assets/background.jpg");
+    background-image: url("assets/background.jpg");
 }
 
+/* bring to 100% brightness on hover */
 #primaryProject:hover,
 .secondaryProjects:hover {
     filter: brightness(100%);
 }
 
+/* primary project has special styling properties to make
+it larger */
 #primaryProject {
     height: 470px;
     width: 79%;
     margin: 8px auto;
-    background-image: url("/assets/nasa-earth.jpg");
+    background-image: url("assets/nasa-earth.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,6 +216,8 @@ h2 {
     margin: 0px 0px 0px 8px;
 }
 
+/* the secondary rows hold two projects each in  a row format
+and should not wrap */
 .secondaryRows {
     display: flex;
     flex-flow: row;
@@ -230,6 +254,8 @@ h2 {
     right: 0%;
 }
 
+/* the contact h3 need some styling to present as evenly aligned both
+vertically and horizontally */
 #contact h3 {
     display: flex;
     justify-content: center;
@@ -246,10 +272,16 @@ h3 a {
     transition: all 0.1s ease-out;
 }
 
+/* each h3 has an anchor tag within them, so when hovering we
+want the color to turn red */
 h3 a:hover {
     color: var(--pastelRed);
 }
 
+/* the media query here is for most mobile devices
+
+generally speaking this has things becoming smaller
+or moving to the center of the screen*/
 @media screen and (max-width: 768px){
     header {
         flex-direction: column;
@@ -281,6 +313,7 @@ h3 a:hover {
         width: auto;
     }
 
+    /* the vertical line becomes a horizontal line here */
     .vl {
         border-left: none;
         border-top: 2px solid var(--baseColor);
@@ -309,6 +342,9 @@ h3 a:hover {
     }
 }
 
+/* this media query is for the smallest of screen sizes,
+if we are to get this small we need to reposition a 
+few more elements as seen in the styling changes below: */
 @media screen and (max-width: 280px) {
 
     #headshot {
