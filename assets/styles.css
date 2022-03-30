@@ -61,7 +61,7 @@ nav a:hover {
 
 .hero {
     /* using linear-gradient to add a darken background effect to the image*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("assets/forest.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("forest.jpg");
 
     height: 400px;
     margin-left: -10px;
@@ -168,7 +168,7 @@ there is also a filter to darken the image when not hovering*/
     height: 90px;
     width: 100%;
     margin: 0px;
-    background-image: url("assets/stitch-row-counter.jpg");
+    background-image: url("stitch-row-counter.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,15 +179,15 @@ there is also a filter to darken the image when not hovering*/
 }
 
 #projectImage2 {
-    background-image: url("assets/earthsattelitenasa.jpg");
+    background-image: url("earthsattelitenasa.jpg");
 }
 
 #projectImage3 {
-    background-image: url("assets/spacexlaunch.jpg");
+    background-image: url("spacexlaunch.jpg");
 }
 
 #projectImage4 {
-    background-image: url("assets/background.jpg");
+    background-image: url("background.jpg");
 }
 
 /* bring to 100% brightness on hover */
@@ -202,7 +202,7 @@ it larger */
     height: 470px;
     width: 79%;
     margin: 8px auto;
-    background-image: url("assets/nasa-earth.jpg");
+    background-image: url("nasa-earth.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
