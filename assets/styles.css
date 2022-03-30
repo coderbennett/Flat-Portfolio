@@ -57,7 +57,7 @@ nav a:hover {
 
     height: 400px;
     margin-left: -10px;
-    margin-right: -8px;
+    margin-right: -12px;
     margin-top: -10px;
 
     /* Position and center the image to scale nicely on all screens */
@@ -253,6 +253,7 @@ h3 a:hover {
 @media screen and (max-width: 768px){
     header {
         flex-direction: column;
+        line-height: 2.5;
     }
 
     header h1 {
@@ -295,11 +296,51 @@ h3 a:hover {
         height: 0px;
     }
 
+    .secondaryProjects figcaption {
+        font-size: small;
+    }
+
     #contact h3 {
         margin: 8px auto;
     }
 
     #aboutMeLinebreak {
         display:none;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    #headshot {
+        top: 25%;
+        left: 23%;
+    }
+
+    .hero figcaption {
+        top: 85%;
+        left: 50%;
+    }
+
+    #about p {
+        font-size: small;
+        margin-left: 24px;
+        margin-right: 16px;
+    }
+
+    .secondaryProjects figcaption {
+        font-size: smaller;
+    }
+
+    #primaryProject {
+        height: 280px;
+    }
+
+    #project1Text {
+        font-size: large;
+    }
+
+    .secondaryProjects {
+        height: 45px;
+        margin-left: -16px;
     }
 }
